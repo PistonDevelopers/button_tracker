@@ -1,0 +1,15 @@
+[package]
+name = "button_controller"
+version = "0.1.0"
+authors = [
+    "Sean Hagar <rcix2010@gmail.com>"
+]
+keywords = ["key", "button", "controller", "mouse", "press"]
+description = "A Rust library for tracking key/mouse press events from windows for use in update loops"
+
+[lib]
+name = "button_controller"
+path = "src/lib.rs"
+
+[dependencies.pistoncore-input]
+git = "https://github.com/PistonDevelopers/input.git"
