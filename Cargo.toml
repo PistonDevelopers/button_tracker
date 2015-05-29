@@ -12,4 +12,4 @@ name = "button_controller"
 path = "src/lib.rs"
 
 [dependencies.pistoncore-input]
-git = "https://github.com/PistonDevelopers/input.git"
+version = "*"

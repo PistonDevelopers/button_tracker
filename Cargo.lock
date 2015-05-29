@@ -2,7 +2,7 @@
 name = "button_controller"
 version = "0.1.0"
 dependencies = [
- "pistoncore-input 0.0.9 (git+https://github.com/PistonDevelopers/input.git)",
+ "pistoncore-input 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -26,8 +26,8 @@ dependencies = [
 
 [[package]]
 name = "pistoncore-input"
-version = "0.0.9"
-source = "git+https://github.com/PistonDevelopers/input.git#0522bd26a726f031f7d64e0a677a6c8792308f9c"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "bitflags 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "num 0.1.24 (registry+https://github.com/rust-lang/crates.io-index)",
