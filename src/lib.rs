@@ -54,7 +54,7 @@ impl ButtonController {
 
     /// Checks if a button is pressed as of the last update. Will return false if a button has never been registered as pressed.
     pub fn last_pressed(&mut self, button: &Button) -> bool {
-        if let Some(state) = self.current_buttons.get(button) {
+        if let Some(state) = self.last_buttons.get(button) {
             *state
         } else {
             false
