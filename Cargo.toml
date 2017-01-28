@@ -4,12 +4,15 @@ version = "0.1.0"
 authors = [
     "Sean Hagar <rcix2010@gmail.com>"
 ]
-keywords = ["key", "button", "controller", "mouse", "press"]
-description = "A Rust library for tracking key/mouse press events from windows for use in update loops"
+keywords = ["key", "button", "tracker", "mouse", "piston"]
+description = "A Piston library for tracking key/mouse press events from windows for use in update loops"
+license = "MIT"
+repository = "https://github.com/PistonDevelopers/button_tracker.git"
+homepage = "https://github.com/PistonDevelopers/button_tracker"
 
 [lib]
 name = "button_tracker"
 path = "src/lib.rs"
 
 [dependencies.pistoncore-input]
-version = "*"
+version = "0.17.0"
