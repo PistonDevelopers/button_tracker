@@ -52,7 +52,7 @@ impl ButtonController {
 
     /// Checks if a button is pressed as of the current update.
     /// Will return false if a button has never been registered as pressed.
-    pub fn current_pressed(&mut self, button: &Button) -> bool {
+    pub fn current_pressed(&self, button: &Button) -> bool {
         if let Some(state) = self.current_buttons.get(button) {
             *state
         } else {
@@ -62,7 +62,7 @@ impl ButtonController {
 
     /// Checks if a button is pressed as of the last update.
     /// Will return false if a button has never been registered as pressed.
-    pub fn last_pressed(&mut self, button: &Button) -> bool {
+    pub fn last_pressed(&self, button: &Button) -> bool {
         if let Some(state) = self.last_buttons.get(button) {
             *state
         } else {
@@ -74,7 +74,7 @@ impl ButtonController {
     /// the current and last update.
     /// Most useful for determining whether a button was just pressed
     /// or released.
-    pub fn pressed_state(&mut self,
+    pub fn pressed_state(&self,
                          button: &Button,
                          last_state: bool,
                          current_state: bool)
