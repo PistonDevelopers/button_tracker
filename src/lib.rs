@@ -13,15 +13,15 @@ use std::collections::HashMap;
 /// (though most commonly window event loop generated press events)
 /// and tracks them in an update loop friendly form.
 #[derive(Clone)]
-pub struct ButtonController {
+pub struct ButtonTracker {
     current_buttons: HashMap<Button, bool>,
     last_buttons: HashMap<Button, bool>,
 }
 
-impl ButtonController {
-    /// Creates a new ButtonController.
-    pub fn new() -> ButtonController {
-        ButtonController {
+impl ButtonTracker {
+    /// Creates a new ButtonTracker.
+    pub fn new() -> ButtonTracker {
+        ButtonTracker {
             current_buttons: HashMap::new(),
             last_buttons: HashMap::new(),
         }
