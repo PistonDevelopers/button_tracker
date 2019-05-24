@@ -1,6 +1,6 @@
 [package]
 name = "piston-button_tracker"
-version = "0.9.0"
+version = "0.10.0"
 authors = [
     "Sean Hagar <rcix2010@gmail.com>"
 ]
@@ -15,4 +15,4 @@ name = "button_tracker"
 path = "src/lib.rs"
 
 [dependencies.pistoncore-input]
-version = "0.24.0"
+version = "0.25.0"
